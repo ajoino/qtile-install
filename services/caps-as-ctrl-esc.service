@@ -1,0 +1,11 @@
+[Unit]
+Description=intercept-tools service that enables caps lock to be used as control and escape
+
+[Service]
+User=jacnil
+WorkingDirectory=/home/jacnil/.config/daemons
+ExecStart=udevmon -c caps2esc.yaml
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
