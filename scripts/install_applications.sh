@@ -21,7 +21,7 @@ python -m pip install \
 cd qtile
 python -m pip install .
 
-cd qtile-extras
+cd ../qtile-extras
 python -m pip install .
 
 echo "Please log out and select Qtile in your session."
