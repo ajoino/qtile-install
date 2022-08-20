@@ -10,6 +10,7 @@ sudo nala install -y \
 	vifm \
 	alacritty \
 	neovim \
+	picom \
 
 # xcffib must be installed before cairocffi
 python -m pip install \
