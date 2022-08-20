@@ -20,7 +20,8 @@ python -m pip install \
 	dbus-next \
 	pywayland \
 	pywlroots \
-	xkbcommon
+	xkbcommon \
+	typing-extras \
 
 cd $HOME/qtile-all/qtile
 python -m pip install .
