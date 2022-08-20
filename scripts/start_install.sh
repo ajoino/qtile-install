@@ -20,4 +20,5 @@ echo "Install applications"
 ./scripts/install_applications.sh
 
 echo "Creating xsession"
-mv ./sessions/qtile.xorg.desktop
+cp ./sessions/qtile.xorg.desktop /usr/share/xsessions/
+

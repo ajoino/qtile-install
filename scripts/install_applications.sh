@@ -1,19 +1,21 @@
-sudo nala install \
+sudo nala install -y \
 	python-is-python3 \
 	python3-pip \
+	python3-cffi \
 	"libyaml-cpp0.6" \
 	interception-tools \
 	libwlroots-dev \
 	fish \
 	vifm \
 	alacritty \
+	neovim \
 
 # xcffib must be installed before cairocffi
 python -m pip install \
 	xcffib
 
 python -m pip install \
-    cairocffi \
+	cairocffi \
 	dbus-next \
 	pywayland \
 	pywlroots \
