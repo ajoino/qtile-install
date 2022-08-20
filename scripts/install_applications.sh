@@ -3,6 +3,7 @@ sudo nala install -y \
 	python3-pip \
 	python3-cffi \
 	"libyaml-cpp0.6" \
+	libpulse-dev \
 	fonts-firacode \
 	interception-tools \
 	libwlroots-dev \
