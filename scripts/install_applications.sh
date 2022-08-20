@@ -11,6 +11,7 @@ sudo nala install -y \
 	alacritty \
 	neovim \
 	picom \
+	nitrogen \
 
 # xcffib must be installed before cairocffi
 python -m pip install \
