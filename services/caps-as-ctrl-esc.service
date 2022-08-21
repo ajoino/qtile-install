@@ -1,9 +1,10 @@
 [Unit]
 Description=intercept-tools service that enables caps lock to be used as control and escape
+Wants=systemd-udev-settle.service
+After=systemd-udev-settle.service
 
 [Service]
-User=jacnil
-WorkingDirectory=/home/jacnil/.config/daemons
+WorkingDirectory=/etc/
 ExecStart=udevmon -c caps2esc.yaml
 Restart=always
 
