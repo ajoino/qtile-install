@@ -13,12 +13,13 @@ echo "Pull github repositories"
 qtile_dir=$HOME/qtile-all/
 cd $qtile_dir
 
-mkdir $HOME/.local/bin
-ln -s /usr/bin/python3 $HOME/bin/.local/python
-
 echo "Install applications"
-./scripts/install_applications.sh
+~/qtile-install/scripts/install_applications.sh
 
 echo "Creating xsession"
-cp ./sessions/qtile.xorg.desktop /usr/share/xsessions/
+sudo cp ~/qtile-install/sessions/qtile.xorg.desktop /usr/share/xsessions/
 
+echo "Adding services"
+mkdir $HOME/.config/systemd/user/ --parents
+sudo cp ~/qtile-install/services/*.service /etc/systemd/system/
+sudo cp ~/qtile-install/services/*.yaml /etc/
