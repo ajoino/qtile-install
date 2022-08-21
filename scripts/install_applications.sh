@@ -1,4 +1,5 @@
 sudo nala install -y \
+	curl \
 	python-is-python3 \
 	python3-pip \
 	python3-cffi \
@@ -14,6 +15,10 @@ sudo nala install -y \
 	picom \
 	nitrogen \
 	i3lock-fancy \
+
+# Get vim-plug
+sh -c 'curl -fLo "$HOME/.local/share"/nvim/site/autoload/plug.vim --create-dirs \
+		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # xcffib must be installed before cairocffi
 python -m pip install \
