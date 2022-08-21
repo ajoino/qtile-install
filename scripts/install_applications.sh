@@ -13,6 +13,7 @@ sudo nala install -y \
 	neovim \
 	picom \
 	nitrogen \
+	i3lock-fancy \
 
 # xcffib must be installed before cairocffi
 python -m pip install \
