@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/jacnil/xcape/xcape -e 'Control_L=Escape'
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=xcape
+Name=xcape
+Comment[en_US]=Enables control to be used as escape
+Comment=Enable control to be used as escape
